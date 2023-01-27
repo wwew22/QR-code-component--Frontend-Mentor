@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    /*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100vh;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+  background-color: hsl(212, 71%, 93%);
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+    .attribution { font-size: 11px; text-align: center; padding: 20px;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+    
+
+
+    *{
+      font-family: 'Outfit', sans-serif;
+    }
+    .container {
+      width: 90%;
+      height: 720px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: hsl(212, 45%, 89%);
+      box-shadow: 5px 35px 35px  hsl(220, 9%, 87%);
+      
+    }
+    .card {
+      width: 300px;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      border-radius: 15px;
+      background-color:  hsl(0, 0%, 100%);
+    }
+
+    #text1 {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    #text2 {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 18px;
+      color:  hsl(220, 15%, 55%);
+    }
+
+    .qr{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #qrImg {
+      padding: 10px;
+      width: 96%;  
+      border-radius: 20px;
+      
+    }
+
+    #qrImg:hover {
+      width: 100%;
+      transition: linear 200ms;
+      margin-bottom: -12px;
+      
+    }
+
+    .text {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      flex-grow: 2;
+    }
+  </style>
+</head>
+<body>
+
+
+<div class="container">
+
+    <div class="card">
+
+
+    <div class="qr">
+      <img id="qrImg" src="images/image-qr-code.png">
+    </div>
+
+
+    <div class="text">
+      <p id="text1">Improve your front-end skills by building projects</p>
+
+      <p id="text2">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+
+    </div>
+  </div>
+  
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Alexandru Russe</a>.
+  </div>
+
+</div>
+</body>
+</html>
